@@ -75,7 +75,7 @@ $(".itheric-com-redirect")
 						var b = $("#counter")
 							.countdown360(
 							{
-								radius: 60
+								radius: 50
 								, seconds: secondswait
 								, fillStyle: fillStyle
 								, strokeStyle: strokeStyle
@@ -83,7 +83,7 @@ $(".itheric-com-redirect")
 								, fontColor: fontColor
 								, strokeWidth: 7
 								, label: secondstext
-								, autostart: !2
+								, autostart: !1
 								, onComplete: function ()
 								{
 									$("#counter,.timer")
