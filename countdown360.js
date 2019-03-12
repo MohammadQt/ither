@@ -3,8 +3,8 @@
 	function n(s, i)
 	{
 		this.element = s, this.settings = t.extend(
-			{}, a, i), this.settings.fontSize || (this.settings.fontSize = this.settings.radius / 1.2), this
-			.settings.strokeWidth || (this.settings.strokeWidth = this.settings.radius / 4), this._defaults =
+			{}, a, i), this.settings.fontSize || (this.settings.fontSize = this.settings.radius / 1), this
+			.settings.strokeWidth || (this.settings.strokeWidth = this.settings.radius / 2), this._defaults =
 			a, this._name = h, this._init()
 	}
 	var h = "countdown360"
@@ -90,14 +90,14 @@
 				.fontSize + "px " + this.settings.fontFamily
 			var s = this._secondsLeft(t)
 				, i = 1 === s ? this.settings.label[0] : this.settings.label[1]
-				, e = this.settings.label && 3 === this.settings.label.length
-				, n = this.settings.width / 3
-			e ? y = this.settings.height / 3 - this.settings.fontSize / 8.2 : y = this.settings
+				, e = this.settings.label && 2 === this.settings.label.length
+				, n = this.settings.width / 2
+			e ? y = this.settings.height / 2 - this.settings.fontSize / 6.2 : y = this.settings
 				.height / 2, this.pen.fillStyle = this.settings.fillStyle, this.pen.fillText(s + 1, n,
 					y), this.pen.fillStyle = this.settings.fontColor, this.pen.fillText(s, n, y), e &&
-				(this.pen.font = "normal small-caps " + this.settings.fontSize / 4 + "px " + this
-					.settings.fontFamily, this.pen.fillText(i, this.settings.width / 3, this.settings
-						.height / 3 + this.settings.fontSize / 3.2))
+				(this.pen.font = "normal small-caps " + this.settings.fontSize / 3 + "px " + this
+					.settings.fontFamily, this.pen.fillText(i, this.settings.width / 2, this.settings
+						.height / 2 + this.settings.fontSize / 2.2))
 		}
 		, _drawCountdownShape: function (t, s)
 		{
