@@ -11,11 +11,11 @@
                 , a = {
                         radius: 15.5
                         , strokeStyle: "#271739"
-                        , strokeWidth: e
+                        , strokeWidth: 11px
                         , fillStyle: "#3b2751"
                         , fontColor: "#477050"
                         , fontFamily: "sans-serif"
-                        , fontSize: e
+                        , fontSize: 10px
                         , fontWeight: 700
                         , autostart: !0
                         , seconds: 10
@@ -83,7 +83,7 @@
                                 .settings.width +
                                 '" height="' + this
                                 .settings.height +
-                                '">سيتم التحويل خلال<span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
+                                '"><span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
                                 )
                         return t(this.element)
                                 .prepend(s[0]), s[0]
@@ -124,7 +124,7 @@
                                 .length
                                 , n = this.settings.width / 2
                         e ? y = this.settings.height / 2 - this
-                                .settings.fontSize / 1.2 : y =
+                                .settings.fontSize / 6.2 : y =
                                 this.settings.height / 2, this
                                 .pen.fillStyle = this.settings
                                 .fillStyle, this.pen.fillText(
