@@ -122,10 +122,10 @@
                                 , e = this.settings.label &&
                                 2 === this.settings.label
                                 .length
-                                , n = this.settings.width / 2
-                        e ? y = this.settings.height / 2 - this
+                                , n = this.settings.width / 1
+                        e ? y = this.settings.height / 1 - this
                                 .settings.fontSize / 2.2 : y =
-                                this.settings.height / 2, this
+                                this.settings.height / 1, this
                                 .pen.fillStyle = this.settings
                                 .fillStyle, this.pen.fillText(
                                         s + 1, n, y), this.pen
@@ -135,11 +135,11 @@
                                         .font =
                                         "normal small-caps " +
                                         this.settings.fontSize /
-                                        3 + "px " + this
+                                        1 + "px " + this
                                         .settings.fontFamily,
                                         this.pen.fillText(i,
                                                 this.settings
-                                                .width / 2, this
+                                                .width / 1, this
                                                 .settings
                                                 .height / 2 +
                                                 this.settings
