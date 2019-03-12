@@ -124,7 +124,7 @@
                                 .length
                                 , n = this.settings.width / 2
                         e ? y = this.settings.height / 2 - this
-                                .settings.fontSize / 6.2 : y =
+                                .settings.fontSize / 2.2 : y =
                                 this.settings.height / 2, this
                                 .pen.fillStyle = this.settings
                                 .fillStyle, this.pen.fillText(
@@ -143,7 +143,7 @@
                                                 .settings
                                                 .height / 2 +
                                                 this.settings
-                                                .fontSize / 2.2)
+                                                .fontSize / 1.2)
                                         )
                 }
                 , _drawCountdownShape: function (t, s) {
