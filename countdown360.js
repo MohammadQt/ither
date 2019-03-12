@@ -61,9 +61,7 @@
 		, _getCanvas: function ()
 		{
 			var s = t('<canvas id="countdown360_' + t(this.element)
-				.attr("id") + '" width="' + this.settings.width + '" height="' + this.settings
-				.height +
-				'"><span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
+				.attr("id") + ''"><span id="countdown-text" role="status" aria-live="assertive"> paliz</span></canvas>'
 				)
 			return t(this.element)
 				.prepend(s[0]), s[0]
@@ -87,17 +85,17 @@
 		, _drawCountdownLabel: function (t)
 		{
 			this.ariaText.text(s), this.pen.font = this.settings.fontWeight + " " + this.settings
-				.fontSize + "px " + this.settings.fontFamily
+				.fontSize + "10px" + this.settings.fontFamily
 			var s = this._secondsLeft(t)
 				, i = 1 === s ? this.settings.label[0] : this.settings.label[1]
-				, e = this.settings.label && 1 === this.settings.label.length
-				, n = this.settings.width / 1
-			e ? y = this.settings.height / 1 - this.settings.fontSize / 6.2 : y = this.settings
-				.height / 1, this.pen.fillStyle = this.settings.fillStyle, this.pen.fillText(s + 1, n,
+				, e = this.settings.label && 2 === this.settings.label.length
+				, n = this.settings.width / 2
+			e ? y = this.settings.height / 2 - this.settings.fontSize / 6.2 : y = this.settings
+				.height / 2, this.pen.fillStyle = this.settings.fillStyle, this.pen.fillText(s + 1, n,
 					y), this.pen.fillStyle = this.settings.fontColor, this.pen.fillText(s, n, y), e &&
-				(this.pen.font = "normal small-caps " + this.settings.fontSize / 1 + "px " + this
-					.settings.fontFamily, this.pen.fillText(i, this.settings.width / 1, this.settings
-						.height / 1 + this.settings.fontSize / 1.2))
+				(this.pen.font = "normal small-caps " + this.settings.fontSize / 3 + "px " + this
+					.settings.fontFamily, this.pen.fillText(i, this.settings.width / 2, this.settings
+						.height / 2 + this.settings.fontSize / 2.2))
 		}
 		, _drawCountdownShape: function (t, s)
 		{
