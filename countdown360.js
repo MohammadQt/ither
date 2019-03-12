@@ -9,7 +9,7 @@
 	}
 	var h = "countdown360"
 		, a = {
-			radius: 15.5
+			radius: 7.5
 			, strokeStyle: "#271739"
 			, strokeWidth: e
 			, fillStyle: "#3b2751"
@@ -61,7 +61,9 @@
 		, _getCanvas: function ()
 		{
 			var s = t('<canvas id="countdown360_' + t(this.element)
-				.attr("id") + '" width="50" height="50"><span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
+				.attr("id") + '" width="' + this.settings.width + '" height="' + this.settings
+				.height +
+				'"><span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
 				)
 			return t(this.element)
 				.prepend(s[0]), s[0]
