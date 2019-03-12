@@ -3,20 +3,20 @@
 	function n(s, i)
 	{
 		this.element = s, this.settings = t.extend(
-			{}, a, i), this.settings.fontSize || (this.settings.fontSize = this.settings.radius / 1.2), this
-			.settings.strokeWidth || (this.settings.strokeWidth = this.settings.radius / 4), this._defaults =
+			{}, a, i), this.settings.fontSize || (this.settings.fontSize = this.settings.radius / 1.8), this
+			.settings.strokeWidth || (this.settings.strokeWidth = this.settings.radius / 5), this._defaults =
 			a, this._name = h, this._init()
 	}
 	var h = "countdown360"
 		, a = {
-			radius: 15.5
+			radius: 17.5
 			, strokeStyle: "#271739"
 			, strokeWidth: e
 			, fillStyle: "#3b2751"
 			, fontColor: "#477050"
 			, fontFamily: "sans-serif"
 			, fontSize: e
-			, fontWeight: 700
+			, fontWeight: 600
 			, autostart: !0
 			, seconds: 10
 			, label: ["second"
