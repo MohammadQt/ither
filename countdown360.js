@@ -61,7 +61,8 @@
 		, _getCanvas: function ()
 		{
 			var s = t('<canvas id="countdown360_' + t(this.element)
-				.attr("id") + ''"><span id="countdown-text" role="status" aria-live="assertive"> paliz</span></canvas>'
+				.attr("id") + 
+				'"><span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
 				)
 			return t(this.element)
 				.prepend(s[0]), s[0]
@@ -85,7 +86,7 @@
 		, _drawCountdownLabel: function (t)
 		{
 			this.ariaText.text(s), this.pen.font = this.settings.fontWeight + " " + this.settings
-				.fontSize + "10px" + this.settings.fontFamily
+				.fontSize + "px " + this.settings.fontFamily
 			var s = this._secondsLeft(t)
 				, i = 1 === s ? this.settings.label[0] : this.settings.label[1]
 				, e = this.settings.label && 2 === this.settings.label.length
