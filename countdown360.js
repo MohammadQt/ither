@@ -9,16 +9,16 @@
         }
         var h = "countdown360"
                 , a = {
-                        radius: 15.5
-                        , strokeStyle: "#546866"
+                        radius: 10.5
+                        , strokeStyle: "#475bef"
                         , strokeWidth: e
                         , fillStyle: "#5468ff"
                         , fontColor: "#5468ff"
                         , fontFamily: "Cairo"
                         , fontSize: e
-                        , fontWeight: 700
+                        , fontWeight: 600
                         , autostart: !0
-                        , seconds: 5
+                        , seconds: 10
                         , label: ["second", "seconds"]
                         , startOverAfterAdding: !0
                         , onComplete: function () {}
