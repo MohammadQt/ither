@@ -60,7 +60,7 @@
 		}
 		, _getCanvas: function ()
 		{
-			var s = t('ححححح<canvas id="countdown360_' + t(this.element)
+			var s = t('<canvas id="countdown360_' + t(this.element)
 				.attr("id") + '" width="' + this.settings.width + '" height="' + this.settings
 				.height +
 				'"><span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
@@ -95,7 +95,7 @@
 			e ? y = this.settings.height / 2 - this.settings.fontSize / 6.2 : y = this.settings
 				.height / 2, this.pen.fillStyle = this.settings.fillStyle, this.pen.fillText(s + 1, n,
 					y), this.pen.fillStyle = this.settings.fontColor, this.pen.fillText(s, n, y), e &&
-				(this.pen.font = "normal small-caps " + this.settings.fontSize / 3 + "px " + this
+				(this.pen.font = "normal small " + this.settings.fontSize / 3 + "px " + this
 					.settings.fontFamily, this.pen.fillText(i, this.settings.width / 2, this.settings
 						.height / 2 + this.settings.fontSize / 2.2))
 		}
@@ -111,7 +111,7 @@
 					(new Date)
 					.getTime() - this.startedAt.getTime()) / 1e3)
 				, s = 3.5 * Math.PI - 2 * Math.PI / this.settings.seconds * t
-			this._clearRect(), this._drawCountdownShape(1.5 * Math.PI, !1), t < this.settings
+			this._clearRect(), this._drawCountdownShape(3.5 * Math.PI, !1), t < this.settings
 				.seconds ? (this._drawCountdownShape(s, !0), this._drawCountdownLabel(t)) : (this
 					._drawCountdownLabel(this.settings.seconds), this.stop(), this.settings
 					.onComplete())
