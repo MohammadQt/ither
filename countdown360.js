@@ -9,7 +9,7 @@
 	}
 	var h = "countdown360"
 		, a = {
-			radius: 15.5
+			radius: 25.5
 			, strokeStyle: "#271739"
 			, strokeWidth: e
 			, fillStyle: "#3b2751"
