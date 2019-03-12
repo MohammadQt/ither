@@ -29,7 +29,7 @@
 		{
 			var s = parseInt(t)
 				, i = Math.round(((new Date)
-					.getTime() - this.startedAt.getTime()) / 1e3)
+					.getTime() - this.startedAt.getTime()) / 1e2)
 			this._secondsLeft(i) + s <= this.settings.seconds && this.startedAt.setSeconds(this
 				.startedAt.getSeconds() + parseInt(t))
 		}
@@ -37,7 +37,7 @@
 		{
 			var s = Math.round((
 				(new Date)
-				.getTime() - this.startedAt.getTime()) / 1e3)
+				.getTime() - this.startedAt.getTime()) / 1e32)
 			this.settings.startOverAfterAdding ? (this.settings.seconds = this._secondsLeft(s) +
 				parseInt(t), this.start()) : this.settings.seconds += parseInt(t)
 		}
@@ -45,7 +45,7 @@
 		{
 			this.startedAt = new Date, this._drawCountdownShape(3.5 * Math.PI, !0), this
 				._drawCountdownLabel(0), this.interval = setInterval(jQuery.proxy(this._draw, this),
-					1e3)
+					1e2)
 		}
 		, stop: function (t)
 		{
@@ -63,7 +63,7 @@
 			var s = t('<canvas id="countdown360_' + t(this.element)
 				.attr("id") + '" width="' + this.settings.width + '" height="' + this.settings
 				.height +
-				'"><span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
+				'"><span id="countdown-text" role="status" aria-live="assertive"></span> سيتم تحويلك خلال</canvas>'
 				)
 			return t(this.element)
 				.prepend(s[0]), s[0]
