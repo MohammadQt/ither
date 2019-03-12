@@ -3,8 +3,8 @@
 	function n(s, i)
 	{
 		this.element = s, this.settings = t.extend(
-			{}, a, i), this.settings.fontSize || (this.settings.fontSize = this.settings.radius / 1), this
-			.settings.strokeWidth || (this.settings.strokeWidth = this.settings.radius / 2), this._defaults =
+			{}, a, i), this.settings.fontSize || (this.settings.fontSize = this.settings.radius / 3.2), this
+			.settings.strokeWidth || (this.settings.strokeWidth = this.settings.radius / 7), this._defaults =
 			a, this._name = h, this._init()
 	}
 	var h = "countdown360"
@@ -16,7 +16,7 @@
 			, fontColor: "#477050"
 			, fontFamily: "sans-serif"
 			, fontSize: e
-			, fontWeight: 700
+			, fontWeight: 600
 			, autostart: !0
 			, seconds: 10
 			, label: ["second"
@@ -43,7 +43,7 @@
 		}
 		, start: function ()
 		{
-			this.startedAt = new Date, this._drawCountdownShape(3.5 * Math.PI, !0), this
+			this.startedAt = new Date, this._drawCountdownShape(2.5 * Math.PI, !0), this
 				._drawCountdownLabel(0), this.interval = setInterval(jQuery.proxy(this._draw, this),
 					1e3)
 		}
