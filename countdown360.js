@@ -61,8 +61,7 @@
 		, _getCanvas: function ()
 		{
 			var s = t('<canvas id="countdown360_' + t(this.element)
-				.attr("id") + 
-				'"><span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
+				.attr("id") + '" width="' 40px'" height="' 40px'"><span id="countdown-text" role="status" aria-live="assertive"></span></canvas>'
 				)
 			return t(this.element)
 				.prepend(s[0]), s[0]
