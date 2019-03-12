@@ -11,11 +11,11 @@
                 , a = {
                         radius: 15.5
                         , strokeStyle: "#271739"
-                        , strokeWidth: 11px
+                        , strokeWidth: medium
                         , fillStyle: "#3b2751"
                         , fontColor: "#477050"
                         , fontFamily: "sans-serif"
-                        , fontSize: 10px
+                        , fontSize: medium
                         , fontWeight: 700
                         , autostart: !0
                         , seconds: 10
