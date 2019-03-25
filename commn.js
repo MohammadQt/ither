@@ -1,4 +1,4 @@
- //Global setting
+threaded_comments //Global setting
         Config.maxThreadDepth = 5;//How threaded level that you want
         Display_Emo = true;//Display emoticon or not? set "false" to no display
         Replace_Youtube_Link = true;//Auto replace youtube link to iframe embedded, choose "false" to disable
@@ -53,7 +53,7 @@ Emo_List = [
                                     '</pre>','</code>'
                                 ];
       
-var Cur_Cform_Hdr='.comment_form';
+var Cur_Cform_Hdr='.threaded_comments';
 var Cur_Cform_Url=$('#comment-editor').attr('src');
 function trim(str)
 	{
@@ -250,7 +250,7 @@ function Reset_Comment_Form()
 	{
 	html=$(Cur_Cform_Hdr).html();
 	$(Cur_Cform_Hdr).html('');
-	Cur_Cform_Hdr='.comment_form';
+	Cur_Cform_Hdr='.threaded_comments';
 	$(Cur_Cform_Hdr).html(html);
 	$('#comment-editor').attr('src',Cur_Cform_Url)
 }
@@ -259,7 +259,7 @@ function Display_Reply_Form(e)
 	par_id=$(e).attr('id');
 	par_id=Valid_Par_Id(par_id);
 	html=$(Cur_Cform_Hdr).html();
-	if(Cur_Cform_Hdr=='.comment_form')
+	if(Cur_Cform_Hdr=='.threaded_comments')
 		{
 		reset_html='<a href="#origin_cform" onclick="Reset_Comment_Form()">'+Msgs.addComment+'</a><a name="origin_cform"/>';
 		$(Cur_Cform_Hdr).html(reset_html)
